@@ -1,0 +1,23 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "first tests with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "test:chromeHeadedLaptop": "npx cypress run --browser chrome --headed --config-file cypressLaptop.config.js",
+		"test:chromeHeadlessLaptop": "npx cypress run --browser chrome --headless --config-file cypressLaptop.config.js",
+		"test:chromeHeadedMobile": "npx cypress run --browser chrome --headed --config-file cypressMobile.config.js",
+    "test:chromeHeadlessMobile": "npx cypress run --browser chrome --headless --config-file cypressMobile.config.js",
+    "test:edgeHeadedLaptop": "npx cypress run --browser edge --headed --config-file cypressLaptop.config.js",
+		"test:edgeHeadlessLaptop": "npx cypress run --browser edge --headless --config-file cypressLaptop.config.js",
+    "test:edgeHeadedMobile": "npx cypress run --browser edge --headed --config-file cypressMobile.config.js",
+		"test:edgeHeadlessMobile": "npx cypress run --browser edge --headless --config-file cypressMobile.config.js"
+  },
+  "author": "OM",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  },
+  "keywords": []
+}
